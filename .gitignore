@@ -1,0 +1,5 @@
+# Ignore folders
+data/
+modified_model/
+orignal_model/
+qat_model/
