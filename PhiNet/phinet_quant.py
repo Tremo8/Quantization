@@ -137,7 +137,9 @@ class SEBlock(torch.nn.Module):
             self.activation = torch.nn.Hardswish(inplace=True)
         else:
             self.activation = ReLUMax(6)
-        
+            
+        # Serves as a flag for activation quantization. Without it, there will be no activation quantization
+        # for skip connection additions, resulting in erroneous quantization calibration.
         self.mult = nnq.FloatFunctional()
 
         
