@@ -16,9 +16,9 @@ FP32 size:
 INT8 size:
 4.580 MB
 
-FP32 CPU Inference Latency: 29.540 ms
-FP32 GPU Inference Latency: 3.490 ms
-INT8 CPU Inference Latency: 14.413 ms
+FP32 CPU Inference Latency: 15.069 ms
+FP32 GPU Inference Latency: 1.988 ms
+INT8 CPU Inference Latency: 6.055 ms
 ```
 
 Testing on MNIST and CIFAR10:
@@ -29,37 +29,34 @@ Testing on MNIST and CIFAR10:
 
 MNIST Results:
 ```
-Orginal FP32 model CPU Inference Latency: 9.244 ms
-Orginal FP32 model GPU Inference Latency: 5.900 ms
-Orginal FP32 model test accuracy: 98.68%
-Original FP32 model training time: 179.616 s
+Original FP32 model CPU Inference Latency: 5.241 ms
+Original FP32 model GPU Inference Latency: 3.314 ms
+Original FP32 model test accuracy: 98.80%
+Original FP32 model training time: 92.071 s
 
-Optimized FP32 model CPU Inference Latency: 7.669 ms
-Optimized FP32 model GPU Inference Latency: 3.823 ms
-Optimized FP32 model test accuracy: 98.59%
-Optimized FP32 model training time: 161.239 s
+Optimized FP32 model CPU Inference Latency: 3.427 ms
+Optimized FP32 model GPU Inference Latency: 2.197 ms
+Optimized FP32 model test accuracy: 98.71%
+Optimized FP32 model training time: 67.730 s
 
-Optimized INT8 model static quant CPU Inference Latency: 3.453 ms
-Optimized INT8 model static quant test accuracy: 98.36%
+Optimized INT8 model static quant CPU Inference Latency: 2.283 ms
+Optimized INT8 model static quant test accuracy: 98.67%
 
-Optimized INT8 model QAT CPU Inference Latency: 4.760 ms
-Optimized INT8 model QAT test accuracy: 98.81%
-Optimized INT8 model QAT training time: 617.050 s
+Optimized INT8 model QAT CPU Inference Latency: 2.297 ms
+Optimized INT8 model QAT test accuracy: 98.62%
+Optimized INT8 model QAT training time: 305.282 s
 ```
 
 ## Performance of the Orginal Model vs Optimized Model
-Performance comparison of the optimized model with the original model. 
-
 Compare the performance of the original model and the modified model by changing:
 - Number of layers;
 - $\alpha$;
 - $\beta$;
 - t<sub>0</sub>;
 
-Results for the number of layers:
+Results by changing the number of layers:
 ![image](https://github.com/Tremo8/Quantization/assets/102596472/3632cc9a-6af3-4988-a094-f718a7b3bcb8)
 ![image](https://github.com/Tremo8/Quantization/assets/102596472/0ff87706-e9c1-4948-8d96-23a5de97bdc8)
 
 ## References
-
 - **Paissan, Francesco, Alberto Ancilotto, and Elisabetta Farella (2022)**. "PhiNets: A Scalable Backbone for Low-Power AI at the Edge." *ACM Trans. Embed. Comput. Syst.*. [DOI: 10.1145/3510832](https://doi.org/10.1145/3510832)
