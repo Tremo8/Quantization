@@ -55,8 +55,9 @@ Compare the performance of the original model and the modified model by changing
 - t<sub>0</sub>;
 
 Results by changing the number of layers:
-![image](https://github.com/Tremo8/Quantization/assets/102596472/3632cc9a-6af3-4988-a094-f718a7b3bcb8)
-![image](https://github.com/Tremo8/Quantization/assets/102596472/0ff87706-e9c1-4948-8d96-23a5de97bdc8)
+![output](https://github.com/Tremo8/Quantization/assets/102596472/6e3d34d4-8693-423f-95af-2c62323ea82e)
+![output2](https://github.com/Tremo8/Quantization/assets/102596472/55df6fdc-12c3-4f95-8709-72ae2dda5db4)
+
 
 ## References
 - **Paissan, Francesco, Alberto Ancilotto, and Elisabetta Farella (2022)**. "PhiNets: A Scalable Backbone for Low-Power AI at the Edge." *ACM Trans. Embed. Comput. Syst.*. [DOI: 10.1145/3510832](https://doi.org/10.1145/3510832)
