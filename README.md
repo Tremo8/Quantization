@@ -2,7 +2,7 @@
 
 Quantization of PhiNet in PyTorch. 
 
-## Modifications for quantization.
+## Modifications for quantization
 The original model once quantized was not efficient. 
 
 Modifications:
