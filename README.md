@@ -56,6 +56,9 @@ Compare the performance of the original model and the modified model by changing
 - $\beta$;
 - t<sub>0</sub>;
 
+Results for the number of layers:
+![image](https://github.com/Tremo8/Quantization/assets/102596472/3632cc9a-6af3-4988-a094-f718a7b3bcb8)
+![image](https://github.com/Tremo8/Quantization/assets/102596472/0ff87706-e9c1-4948-8d96-23a5de97bdc8)
 
 ## References
 
